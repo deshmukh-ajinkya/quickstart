@@ -1,0 +1,92 @@
+.rootContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header {
+  display: grid;
+  background-color: #000080;
+  color: #ffffff;
+  padding: 12px;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoImage {
+  width: 36px;
+}
+
+.appName {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .logoImage {
+    width: 24px;
+  }
+  .appName {
+    font-size: 12px;
+  }
+}
+
+.navBar {
+  display: grid;
+  background-color: #000080;
+  color: #ffffff;
+  padding: 12px;
+  justify-content: right;
+}
+
+.navLinkContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navLink a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contentContainer {
+  padding: 12px;
+  color: black;
+  height: calc(100vh - 90px);
+  display: grid;
+  grid-column: span 2;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (max-width: 600px) {
+  .navBar {
+    grid-row: 3;
+    grid-column: span 2;
+    justify-content: center;
+  }
+  .navLink {
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .contentContainer {
+    grid-row: 2;
+    grid-column: span 2;
+    height: calc(100vh - 160px);
+    overflow: scroll;
+  }
+}
