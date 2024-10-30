@@ -12,7 +12,7 @@ const getPrivateRoute = (privateRouteList: TCustomRoute['private']): RouteObject
       errorElement: <h1>Invalid Route</h1>,
       loader: (): TLoaderReturn => {
         const authToken = localStorage.getItem('token');
-        if (!authToken) return redirect('/login');
+        if (!authToken) return redirect('/reactbasekit/login');
         return null;
       }
     })) as RouteObject[]; // Cast mapped items to RouteObject[]
@@ -27,7 +27,7 @@ const getPublicRoute = (publicRouteList: TCustomRoute['public']): RouteObject[] 
       errorElement: <h1>Invalid Route</h1>,
       loader: (): TLoaderReturn => {
         const authToken = localStorage.getItem('token');
-        if (authToken && authToken !== '') return redirect('/');
+        if (authToken && authToken !== '') return redirect('/reactbasekit/');
         return null;
       }
     })) as RouteObject[];
