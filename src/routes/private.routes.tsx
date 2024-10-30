@@ -7,7 +7,7 @@ import { TRouteType } from '../types';
 
 export const privateRoutes: TRouteType[] = [
   {
-    path: '/',
+    path: '/reactbasekit/',
     element: <Root />,
     children: [
       {
