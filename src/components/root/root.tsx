@@ -43,7 +43,7 @@ function Root(): React.ReactElement {
               window.location.reload();
             }}>
             <LogoutIcon fontSize="small" />
-            <Link to="/reactbasekit/login">Logout</Link>
+            <Link to="/reactbasekit/">Logout</Link>
           </Box>
         </Box>
       </Box>

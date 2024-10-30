@@ -1,5 +1,6 @@
 import { Box, Button, TextField, Typography } from '@mui/material';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 /**
 @author      : Developer Name Here
 @date        : 2024-08-11
@@ -8,9 +9,11 @@ import React from 'react';
 @return      : react elements
 */
 function Login(): React.ReactElement {
+  const router = useNavigate();
   const handleLogin = (): void => {
     localStorage.setItem('token', 'token');
     window.location.reload();
+    router('/reactbasekit');
   };
   return (
     <Box sx={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
