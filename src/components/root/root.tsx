@@ -22,19 +22,19 @@ function Root(): React.ReactElement {
         <Box className="navLinkContainer">
           <Box className="navLink">
             <DashboardIcon fontSize="small" />
-            <Link to="/">Dashboard</Link>
+            <Link to="/reactbasekit/">Dashboard</Link>
           </Box>
           <Box className="navLink">
             <StreamIcon fontSize="small" />
-            <Link to="/activity">Activity</Link>
+            <Link to="/reactbasekit/activity">Activity</Link>
           </Box>
           <Box className="navLink">
             <Diversity3Icon fontSize="small" />
-            <Link to="/group">Group</Link>
+            <Link to="/reactbasekit/group">Group</Link>
           </Box>
           <Box className="navLink">
             <EmailIcon fontSize="small" />
-            <Link to="/messages">Messages</Link>
+            <Link to="/reactbasekit/messages">Messages</Link>
           </Box>
           <Box
             className="navLink"
@@ -43,7 +43,7 @@ function Root(): React.ReactElement {
               window.location.reload();
             }}>
             <LogoutIcon fontSize="small" />
-            <Link to="/login">Logout</Link>
+            <Link to="/reactbasekit/login">Logout</Link>
           </Box>
         </Box>
       </Box>
