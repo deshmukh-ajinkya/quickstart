@@ -27,7 +27,7 @@ const getPublicRoute = (publicRouteList: TCustomRoute['public']): RouteObject[] 
       errorElement: <h1>Invalid Route</h1>,
       loader: (): TLoaderReturn => {
         const authToken = localStorage.getItem('token');
-        if (authToken && authToken !== '') return redirect('/reactbasekit/');
+        if (authToken && authToken !== '') return redirect('/reactbasekit');
         return null;
       }
     })) as RouteObject[];
