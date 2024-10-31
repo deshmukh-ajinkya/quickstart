@@ -86,7 +86,7 @@
   .contentContainer {
     grid-row: 2;
     grid-column: span 2;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 136px);
     overflow: scroll;
   }
 }
