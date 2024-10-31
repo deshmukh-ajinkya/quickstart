@@ -2,6 +2,11 @@
 
 - codebase for start with your new react project with pre-configured necessary boilerplate code
 
+# How To Setup
+- Clone repository 
+- Upadte name of your project in package.json
+- Install packages with npm i
+
 # Features
 
 | Name          | Description                                                             |
